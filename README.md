@@ -30,6 +30,6 @@ CRUD
  ```
 ## Delete
 ```
-    $sql = "DELETE FROM peronal_informations WHERE id='16'";
+    $sql = "DELETE FROM peronal_informations WHERE id='1'";
     delete($sql);
 ```
