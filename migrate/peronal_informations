@@ -1,0 +1,42 @@
+CREATE TABLE `peronal_informations` (
+  `id` int(11) NOT NULL,
+  `f_name` varchar(150) NOT NULL,
+  `m_name` varchar(150) NOT NULL,
+  `l_name` varchar(150) NOT NULL,
+  `suffix_name` varchar(15) NOT NULL,
+  `birth_date` date NOT NULL,
+  `birth_place` varchar(255) NOT NULL,
+  `sex` varchar(10) NOT NULL,
+  `civil_status` varchar(30) NOT NULL,
+  `educational_attainment` varchar(150) NOT NULL,
+  `occupation` varchar(100) NOT NULL,
+  `permanent_address` varchar(255) NOT NULL,
+  `present_address` varchar(255) NOT NULL,
+  `mobile_number1` varchar(25)  NULL,
+  `mobile_number2` varchar(25)  NULL,
+  `tel_number1` varchar(20)  NULL,
+  `tel_number2` varchar(20)  NULL,
+  `insert_by` int(11) NOT NULL,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `peronal_information`
+--
+ALTER TABLE `peronal_informations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `peronal_information`
+--
+ALTER TABLE `peronal_informations`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
